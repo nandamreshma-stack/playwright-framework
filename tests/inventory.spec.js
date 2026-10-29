@@ -18,7 +18,7 @@ await loginPage.open();
 inventory= new Inventory(page);
 
 })
-test('cart badge update when adding products',async ({page})=>{
+test('cart update when adding products',async ({page})=>{
 await inventory.addProductToCart(constants.texts.sauceLabsBackPackText1);
 await inventory.addProductToCart(constants.texts.sauceLabsBikeLightText);
 const cartCount= await inventory.getCartCount();
