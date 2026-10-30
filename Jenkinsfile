@@ -1,5 +1,8 @@
 pipeline {
     agent any
+    environment{
+        BASE_URL= 'https://www.saucedemo.com'
+    }
 
     stages {
         stage('Checkout') {
