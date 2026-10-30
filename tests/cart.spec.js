@@ -23,7 +23,7 @@ test.beforeEach(async ({page})=>{
     
 
 })
-
+//hello
 test('added products appear correctly', async ({page})=>{
 await inventory.addProductToCart(constants.texts.sauceLabsBackPackText1);
 await inventory.addProductToCart(constants.texts.sauceLabsBikeLightText);
